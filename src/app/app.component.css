@@ -1,0 +1,107 @@
+.card-form-cadastro {
+    background-color: #F5FFFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.card-content-cadastro {
+    padding: 30px;
+    display: flex;
+    gap: 5px;
+}
+
+.card-footer-cadastro {
+    margin-bottom: 20px
+}
+
+.botao-listar {
+    text-align: center;
+    margin: 20px;
+}
+
+.listagem-animais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Estilo para a tabela */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+  /* Estilo para as células do cabeçalho */
+th {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+  
+  /* Estilo para as células de dados */
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+  
+tr {
+    background-color: #cce6ff;
+}
+
+  /* Estilo para as linhas ímpares (opcional) */
+tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+  
+/* Estilo para o hover das linhas (opcional) */
+tr:hover {
+    background-color: #e6e6e6;
+}
+
+.tabela-botoes {
+
+}
+
+.mensagem-erro {
+    max-width: 300px;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    background-color: #ffcccc; 
+    color: #ff0000; 
+    padding: 8px; 
+    border: 1px solid #ff0000; 
+    border-radius: 4px;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario-edicao {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 20vw;
+    margin: 0 auto;
+}
+
+.formulario-edicao .inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-edicao button {
+    max-width: 100px;
+    margin-top: 10px;
+}
