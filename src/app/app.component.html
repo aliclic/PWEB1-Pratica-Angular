@@ -83,6 +83,7 @@
         <th>Tipo</th>
         <th>Data de Nascimento</th>
         <th>Dono</th>
+        <th>Ações</th>
       </tr>
     </thead>
     <tbody>
@@ -92,8 +93,12 @@
         <td>{{ animal.tipo }}</td>
         <td>{{ animal.dataNascimento }}</td>
         <td>{{ animal.dono }}</td>
-        <td><button mat-mini-fab color="accent" (click)="editar(animal)"><mat-icon>edit</mat-icon></button></td>
-        <td><button mat-mini-fab color="warn" (click)="remover(animal)"><mat-icon>delete</mat-icon></button></td>
+        <td>
+          <div class="botoes-acao">
+            <button mat-mini-fab color="accent" (click)="editar(animal)"><mat-icon>edit</mat-icon></button>
+            <button mat-mini-fab color="warn" (click)="excluirAnimal(animal)"><mat-icon>delete</mat-icon></button>
+          </div>
+        </td>
       </tr>
     </tbody>
   </table>

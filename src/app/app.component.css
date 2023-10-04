@@ -62,8 +62,10 @@ tr:hover {
     background-color: #e6e6e6;
 }
 
-.tabela-botoes {
-
+.botoes-acao {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
 }
 
 .mensagem-erro {

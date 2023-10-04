@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { AnimalEstimacao } from './shared/model/animal-estimacao';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-root',
@@ -99,5 +100,26 @@ export class AppComponent {
     this.mostrarErro = false;
     this.mensagemErro = '';
   }
+
+  excluirAnimal(animal: AnimalEstimacao): void {
+    Swal.fire({
+      title: 'Tem certeza?',
+      text: `Você deseja excluir o animal ${animal.nome}?`,
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonText: 'Sim, excluir',
+      cancelButtonText: 'Cancelar'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        this.remover(animal);
+        Swal.fire(
+          'Excluído!',
+          'O animal foi excluído com sucesso.',
+          'success'
+        );
+      }
+    });
+  }
+  
   
 }
